@@ -21,5 +21,11 @@ const todoStore = useTodoStore();
 </script>
 
 <style scoped>
-
+  .item {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
 </style>
