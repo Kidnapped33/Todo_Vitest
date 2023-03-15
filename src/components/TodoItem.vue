@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="item">
     <h3>{{ todo.title }}</h3>
     <div>
       <button @click="todoStore.removeTodo(todo.id)">
@@ -20,4 +20,12 @@ const todoStore = useTodoStore();
 
 </script>
 
-<style scoped></style>
+<style scoped>
+  .item {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+</style>
