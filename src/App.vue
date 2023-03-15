@@ -1,9 +1,10 @@
 <template>
-  <TodoList />
+  <TodoList>
+  </TodoList>
 </template>
 
 <script setup lang="ts">
-import TodoList from "../src/components/TodoList.vue";
+import TodoList from "./components/TodoList.vue";
 </script>
 
 <style scoped></style>

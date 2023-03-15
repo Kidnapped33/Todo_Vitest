@@ -1,19 +1,17 @@
 <template>
+  <h1>todo-list</h1>
   <input />
-  <ul v-for="item in todoList" :key="item">
-    <li>
-      {{ item }}
-      <button>remove</button>
-    </li>
-  </ul>
+  <div  >
+    <TodoItem v-for="todo in todos" :key="todo.id" />
+  </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import TodoItem from "./TodoItem.vue";
+import { useTodoStore } from "../store/todo";
 
-const todoList = ref<Array<any>>([10, 20, 30]);
+const { todos } = useTodoStore();
+
 </script>
 
-<style scoped>
-
-</style>
+<style lang="scss" scoped></style>
