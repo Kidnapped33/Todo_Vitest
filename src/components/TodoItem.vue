@@ -2,9 +2,9 @@
   <div>
     <h3>{{ todo.title }}</h3>
     <div>
-      <!-- <button @click="($event) => todoStore.removeTodo(todo.id)">
+      <button @click="todoStore.removeTodo(todo.id)">
         remove
-      </button> -->
+      </button>
     </div>
   </div>
 </template>

@@ -1,10 +1,13 @@
 <template>
-  <TodoList>
-  </TodoList>
+  <div>
+    <TodoList/>
+  </div>
 </template>
 
 <script setup lang="ts">
 import TodoList from "./components/TodoList.vue";
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>
